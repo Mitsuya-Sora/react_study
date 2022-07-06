@@ -1,11 +1,17 @@
 import "./styles.css";
+import ColorfulMessage from "./components/ColorfulMessage";
 
 export default function App() {
+  const onClickButton = () => alert();
+
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <h2>Start editing to see some magic happen!</h2>
+      <ColorfulMessage color="red" message="Hello CodeSandbox" />
+      <ColorfulMessage
+        color="black"
+        message="Start editing to see some magic happen!"
+      />
+      <button onClick={onClickButton}>ボタン</button>
     </div>
   );
 }
